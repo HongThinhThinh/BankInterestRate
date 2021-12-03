@@ -36,15 +36,28 @@ function tinhDiem() {
 
     }
 
-    if ((tn || tv || lx || th) < 0) {
-        document.getElementById('rs').textContent = (" Nhập số âm ăn cc hả")
 
-    }
 
-    if ((tn || tv || lx || th) == "") {
+
+    if (tn == "" || tv == "" || lx == "" || th == "") {
         document.getElementById('rs').textContent = (" Bỏ trống ăn cc hả")
         document.getElementById('kq').style.display = " none"
         document.getElementById('kq2').style.display = " none"
+        var thunhap = document.getElementById('thunhap').value = "";
+        var tienvay = document.getElementById('tienvay').value = "";
+        var laixuat = document.getElementById('laixuat').value = "";
+        var thoihan = document.getElementById('thoihan').value = "";
+
+    }
+    if (tn < 0 || tv < 0 || lx < 0 || th < 0) {
+        document.getElementById('rs').textContent = (" Nhập số âm ăn cc hả")
+        document.getElementById('kq').style.display = " none"
+        document.getElementById('kq2').style.display = " none"
+        var thunhap = document.getElementById('thunhap').value = "";
+        var tienvay = document.getElementById('tienvay').value = "";
+        var laixuat = document.getElementById('laixuat').value = "";
+        var thoihan = document.getElementById('thoihan').value = "";
+
     }
 
 
