@@ -41,6 +41,12 @@ function tinhDiem() {
 
     }
 
+    if ((tn || tv || lx || th) == "") {
+        document.getElementById('rs').textContent = (" Bỏ trống ăn cc hả")
+        document.getElementById('kq').style.display = " none"
+        document.getElementById('kq2').style.display = " none"
+    }
+
 
 }
 function reset() {
